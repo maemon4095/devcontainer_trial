@@ -25,6 +25,7 @@ devcontainer.jsonのみの場合，Dockerfileを使う場合，Docker Composeを
     "name": "${localWorkspaceFolderBasename}", 
     //マウントするボリュームのリスト．Docker CLIの--mountフラグと同じ内容．
     "mounts": [
+        // node_modulesなどのアクセスが多いフォルダはvolume mountにすると高速になる．
         {
             "type": "volume",
             "source": "${localWorkspaceFolderBasename}_tmp",
