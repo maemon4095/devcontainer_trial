@@ -2,8 +2,6 @@
     "name": "${localWorkspaceFolderBasename}",
     "image": "node:slim",
     "runArgs": [
-        "--workdir",
-        "/${localWorkspaceFolderBasename}/workspace",
         "--tty",
         "--name",
         "${localWorkspaceFolderBasename}"
