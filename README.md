@@ -59,8 +59,6 @@ devcontainer.jsonのみの場合，Dockerfileを使う場合，Docker Composeを
     "image": "node:slim", //利用するイメージの名前
     // Docker CLIに渡す引数のリスト
     "runArgs": [
-        "--workdir",
-        "/${localWorkspaceFolderBasename}/workspace",
         "--tty",
         "--name",
         "${localWorkspaceFolderBasename}"
